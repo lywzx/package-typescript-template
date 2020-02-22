@@ -1,5 +1,5 @@
 {
-  "name": "pdd-node-sdk",
+  "name": "package-typescript-template",
   "version": "0.0.1",
   "description": "pdd node sdk",
   "main": "src/index.ts",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lywzx/pdd-node-sdk.git"
+    "url": "git+https://github.com/lywzx/package-typescript-template.git"
   },
   "keywords": [
     "pdd",
@@ -21,9 +21,9 @@
   "author": "liuyang",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/lywzx/pdd-node-sdk/issues"
+    "url": "https://github.com/lywzx/package-typescript-template/issues"
   },
-  "homepage": "https://github.com/lywzx/pdd-node-sdk#readme",
+  "homepage": "https://github.com/lywzx/package-typescript-template#readme",
   "devDependencies": {
     "@types/chai": "^4.2.9",
     "@types/mocha": "^7.0.1",
