@@ -4,6 +4,7 @@
   "description": "pdd node sdk",
   "main": "src/index.ts",
   "scripts": {
+    "start": "ts-node -r tsconfig-paths/register ./src/index.ts",
     "build": "tsc",
     "lint": "eslint src --ext .ts --fix",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.ts\"",
@@ -36,6 +37,7 @@
     "mocha": "^7.0.1",
     "prettier": "^1.19.1",
     "ts-node": "^8.6.2",
+    "tsconfig-paths": "^3.9.0",
     "typescript": "^3.8.2"
   }
 }
