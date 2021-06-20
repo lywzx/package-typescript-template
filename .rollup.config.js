@@ -19,14 +19,5 @@ module.exports = {
     }
   },
   external: [
-    'typeorm',
-    'tough-cookie',
-    '@milake/servkit',
-    '@nestjs/common',
-    '@nestjs/core',
-    'lodash',
-    'electron',
-    'axios',
-    'typeorm',
   ],
 };
