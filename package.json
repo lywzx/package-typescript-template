@@ -4,8 +4,8 @@
   "description": "pdd node sdk",
   "main": "src/index.ts",
   "scripts": {
-    "start": "ts-node -r tsconfig-paths/register ./src/index.ts",
-    "build": "tsc",
+    "dev": "node --max_old_space_size=8192 node_modules/rollup/dist/bin/rollup -w -c node_modules/@lywzx/rollup-build-scripts/rollup.config.js --only-entry=minify,cjs",
+    "build": "node --max-old-space-size=8192 node_modules/@lywzx/rollup-build-scripts/index.js",
     "lint": "eslint src --ext .ts --fix",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.ts\"",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -26,6 +26,7 @@
   },
   "homepage": "https://github.com/lywzx/package-typescript-template#readme",
   "devDependencies": {
+    "@lywzx/rollup-build-scripts": "0.0.10",
     "@types/chai": "^4.2.9",
     "@types/mocha": "^7.0.1",
     "@typescript-eslint/eslint-plugin": "^2.20.0",
@@ -38,6 +39,16 @@
     "prettier": "^1.19.1",
     "ts-node": "^8.6.2",
     "tsconfig-paths": "^3.9.0",
-    "typescript": "^3.8.2"
+    "rollup": "^2.23.0",
+    "rollup-plugin-copy": "^3.4.0",
+    "rollup-plugin-dts": "~3.0.1",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-typescript2": "^0.27.3",
+    "@rollup/plugin-buble": "^0.21.3",
+    "@rollup/plugin-commonjs": "^15.0.0",
+    "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-node-resolve": "^9.0.0",
+    "@rollup/plugin-replace": "^2.3.3",
+    "typescript": "^4.0.2"
   }
 }
